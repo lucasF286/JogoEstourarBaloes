@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Estourar balões</title>
+		<script type="text/javascript">
+
+			function valorDificuldade(){
+
+				var dificuldade = document.getElementById("dificuldade").value;
+
+				document.location.href = "jogo.html?"+dificuldade;
+			}
+			
+		</script>
+	</head>
+
+	<body style="background: #95d3fc;">
+
+		<p>
+			<h4 style="display: inline;">Dificuldade: </h4>
+			<select id="dificuldade">
+				<option value="1"> Fácil </option>
+				<option value="2"> Normal </option>
+				<option value="3"> Difícil </option>
+			</select>
+		</p>
+
+		<img src="imagens/iniciar.png" alt="Botão iniciar" onclick="valorDificuldade();"/>
+
+		<br />
+
+		<p>
+			<b>
+				Fácil: você terá 120 segundos para estourar todos os balões. <br />
+				Normal: você terá 60 segundos para estourar todos os balões. <br />
+				Difícil: você terá 30 segundos para estourar todos os balões. <br />	
+			</b>	
+		</p>	
+
+	</body>
+
+</html>

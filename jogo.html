@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Estourar balões</title>
+		<script src="jogo.js"></script>
+	</head>
+
+	<body onload="iniciarJogo();">
+
+		<div style="float: left; width: auto; height: 500px; background: #fff; border: 1px solid #c2c2c2;">
+
+			<h4 style="margin: 0px; padding: 0px;">Balões Inteiros</h4>
+			<table>
+				<tr>
+					<td><img src="imagens/balao_azul_grande.png" /></td>
+					<td><span id="baloesInteiros"></span></td>
+				</tr>
+			</table>
+
+			<br />
+
+			<h4 style="margin: 0px; padding: 0px;">Balões Estourados</h4>
+			<table>
+				<tr>
+					<td><img src="imagens/balao_azul_grande_estourado.png" /></td>
+					<td><span id="baloesEstourados"></span></td>
+				</tr>
+			</table>
+
+			<br />
+
+			<h4 style="margin: 0px; padding: 0px;">Tempo Restante</h4>
+			<table border="1" style="width: 140px; height:132px;">
+				<tr style="text-align: center; font-size: 25px; color: red;">
+					<td id="cronometro" style="background: url(imagens/cronometro.png);"></td>
+				</tr>
+			</table>
+
+			<br />
+
+			<h4 style="margin: 0px; padding: 0px;">Pontuação Final:</h4>
+
+			<span  style="font-size: 30px; margin-left: 50px;	" id="pontuacaoFinal"></span>
+
+		</div>
+
+		<div id="cenario" style="float: left; width: 600px; height: 500px; margin-left: 5px; border: 1px solid #c2c2c2; background: url(imagens/cenario.png); background-position: bottom;">
+		</div>
+
+	</body>
+
+</html>
